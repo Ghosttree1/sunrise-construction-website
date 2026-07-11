@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="sunrise_favicon_svg.svg" type="image/svg+xml">
+<title>Central Oregon Luxury Communities | Sunrise Construction of Oregon</title>
+<meta name="description" content="We build in Central Oregon's premier communities — Juniper Preserve, Tetherow, Broken Top, Brasada Ranch, Caldera Springs, Eagle Crest, Tree Farm, Ranch at the Canyons and more.">
+<link rel="canonical" href="https://sunriseoregon.com/communities">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunrise Construction of Oregon">
+<meta property="og:title" content="Central Oregon Luxury Communities | Sunrise Construction">
+<meta property="og:description" content="Custom homes in Central Oregon's premier golf, resort, ranch and gated communities.">
+<meta property="og:url" content="https://sunriseoregon.com/communities">
+<meta property="og:image" content="https://sunriseoregon.com/images/juniper-preserve-estate.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#23211C;--muted:#6E6A60;--line:#E4DFD4;--paper:#FBF9F4;--cream:#F2EDE3;--gold:#9A7B3F;--forest:#3E4A3A;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);font-weight:300;line-height:1.7;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.12;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 5vw;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .btn{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:1px solid var(--ink);transition:.25s;}
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.light{border-color:#F3EEE3;color:#F3EEE3;}
+  .btn.light:hover{background:#F3EEE3;color:var(--ink);}
+  .link{font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:10;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 5vw;color:#F3EEE3;}
+  .brand{font-family:'Fraunces';font-size:22px;letter-spacing:4px;}
+  .menu{display:flex;gap:28px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;}
+  .menu a:hover{color:var(--gold);}
+  .keylink{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;color:#E2C893 !important;padding-left:26px;border-left:1px solid rgba(243,238,227,.28);}
+  .navbtn{border:1px solid #F3EEE3;padding:10px 20px;}
+  @media(max-width:900px){.menu{display:none;}}
+
+  .hero{position:relative;min-height:66vh;display:flex;align-items:flex-end;background:#1C1A15 center/cover no-repeat;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.45),rgba(20,16,12,.72));}
+  .hero .wrap{position:relative;z-index:2;color:#F6F1E7;padding-bottom:7vh;}
+  .hero h1{font-size:clamp(40px,5.6vw,72px);max-width:16ch;margin:16px 0 16px;}
+  .hero p{font-size:clamp(16px,1.5vw,20px);max-width:56ch;color:#E6DECF;}
+
+  section{padding:clamp(56px,7vw,92px) 0;}
+  .intro{max-width:820px;}
+  .intro h2{font-size:clamp(26px,3vw,40px);max-width:22ch;}
+  .intro p{color:var(--muted);margin-top:18px;font-size:17px;}
+
+  .sub{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin:54px 0 22px;font-weight:500;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
+  .comm{border:1px solid var(--line);background:#fff;overflow:hidden;display:flex;flex-direction:column;}
+  .commimg{aspect-ratio:3/2;background:center/cover no-repeat;position:relative;display:block;}
+  a.commimg{transition:opacity .25s;cursor:pointer;}
+  a.commimg:hover{opacity:.9;}
+  .commimg.panel{background:var(--forest);display:flex;align-items:center;justify-content:center;}
+  .commimg.panel span{font-family:'Fraunces';font-style:italic;color:#C7B98E;font-size:22px;letter-spacing:1px;}
+  .badge{position:absolute;top:14px;left:14px;background:rgba(20,16,12,.55);backdrop-filter:blur(4px);color:#E2C893;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 11px;}
+  .commbody{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1;}
+  .commbody .loc{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);}
+  .commbody h3{font-size:23px;margin:6px 0 10px;}
+  .commbody h3 a:hover{color:var(--gold);}
+  .commbody p{color:var(--muted);font-size:14.5px;flex:1;}
+  .commbody .note{font-size:12.5px;color:var(--ink);margin-top:14px;border-top:1px solid var(--line);padding-top:12px;}
+
+  .within{background:var(--forest);color:#EFEDE2;}
+  .within .eyebrow{color:#C7B98E;}
+  .within h2{color:#F4F1E6;font-size:clamp(26px,3vw,40px);max-width:20ch;}
+  .within .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:start;margin-top:10px;}
+  .within p{color:#CFD2C5;margin-top:18px;}
+  .within ul{list-style:none;margin-top:8px;}
+  .within li{padding:14px 0;border-top:1px solid rgba(255,255,255,.18);font-size:15px;color:#E7E6DA;}
+  .within li b{font-family:'Fraunces';font-weight:400;color:#F4F1E6;}
+  @media(max-width:820px){.within .cols{grid-template-columns:1fr;gap:28px;}}
+
+  .alsogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px;}
+  .alsocard{border:1px solid var(--line);background:#fff;padding:32px;}
+  .alsocard h3{font-size:22px;margin-bottom:10px;}
+  .alsocard p{color:var(--muted);font-size:14.5px;margin-bottom:18px;}
+  @media(max-width:760px){.alsogrid{grid-template-columns:1fr;}}
+
+  .closing{position:relative;background:#23211C center/cover no-repeat;color:#F6F1E7;text-align:center;padding:90px 0;}
+  .closing::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.62);}
+  .closing .wrap{position:relative;z-index:2;}
+  .closing h2{font-size:clamp(28px,3.4vw,44px);margin:16px auto;max-width:20ch;}
+
+  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
+  .footbrand{font-family:'Fraunces';font-size:22px;letter-spacing:3px;color:#F6F1E7;}
+  footer a{color:#CFC8B8;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="brand"><a href="/"><img src="gold_sun_gray_mountain__name.png" alt="Sunrise Construction of Oregon" style="height:84px;width:auto;display:block;"></a></div>
+    <div class="menu">
+      <a href="sunrise-selected-work.html">Our Work</a>
+      <a href="sunrise-the-process.html">The Process</a>
+      <a href="/#resources">Resources</a>
+      <a href="sunrise-our-legacy.html">Our Legacy</a>
+      <a href="sunrise-the-key.html" class="keylink" title="For current Sunrise clients">&#9911; The Key</a>
+      <a href="sunrise-begin.html" class="navbtn">Begin</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('https://sunriseoregon.com/images/communities-hero.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Central Oregon luxury communities</span>
+    <h1>We know these places — and how to build in them.</h1>
+    <p>From private golf and wellness resorts to gated westside enclaves, Central Oregon's finest communities each have their own standards and rhythms. We've built in them, and we know the people who run them.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section>
+  <div class="wrap intro">
+    <span class="eyebrow">Building within a community</span>
+    <h2 style="margin-top:14px;">The right community is part of the home.</h2>
+    <p>Where you build shapes how you'll live — the golf, the trails, the views, the neighbors, the lock-and-leave ease. We help you weigh communities and lots, then build a home that earns its place in its setting rather than fighting for one. If you're still choosing, bring us in early; we'll give you a straight read on each.</p>
+    <div style="margin-top:22px;"><a href="sunrise-luxury-communities.html" class="btn">Read the Luxury Communities Guide</a></div>
+  </div>
+</section>
+
+<!-- COMMUNITIES -->
+<section style="padding-top:0;">
+  <div class="wrap">
+
+    <div class="sub">Golf &amp; resort communities</div>
+    <div class="grid">
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-juniper-preserve.html" aria-label="Juniper Preserve custom homes" style="background-image:url('https://sunriseoregon.com/images/juniper-preserve-estate.jpg');"></a>
+        <div class="commbody">
+          <span class="loc">Bend / Powell Butte</span>
+          <h3><a href="sunrise-juniper-preserve.html">Juniper Preserve</a> <span style="font-size:14px;color:var(--muted);">(Pronghorn)</span></h3>
+          <p>A private golf and wellness resort on the high desert, with Nicklaus and Fazio courses and tens of thousands of acres of open BLM land at its back. Refined, secluded, minutes from Bend.</p>
+          <div class="note">Sunrise built the 2021 Best of Show home here &middot; <a href="sunrise-juniper-preserve.html" class="link" style="border-color:var(--gold);">Community Guide &#8594;</a></div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-broken-top.html" aria-label="Broken Top custom homes" style="background-image:url('https://sunriseoregon.com/images/tam-mcarthur-0126.jpg');"></a>
+        <div class="commbody">
+          <span class="loc">Bend · Westside</span>
+          <h3><a href="sunrise-broken-top.html">Broken Top</a></h3>
+          <p>One of Bend's premier gated golf communities — mature, private, and beautifully treed, set against the Cascades just minutes from downtown.</p>
+          <div class="note">Sunrise builds &amp; renovates here &middot; <a href="sunrise-broken-top.html" class="link" style="border-color:var(--gold);">Community Guide &#8594;</a></div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-tetherow.html" aria-label="Tetherow custom homes" style="background:#6b2530;display:flex;align-items:center;justify-content:center;padding:26px;"><img src="https://sunriseoregon.com/images/tetherow-logo.png" alt="Tetherow, Bend Oregon" style="width:78%;height:auto;max-height:58%;object-fit:contain;"></a>
+        <div class="commbody">
+          <span class="loc">Bend</span>
+          <h3><a href="sunrise-tetherow.html">Tetherow</a></h3>
+          <p>Between downtown Bend and Mt. Bachelor, with a David McLay Kidd championship course and a striking high-desert modern architectural character throughout.</p>
+          <div class="note">Modern, contemporary, and transitional homes &middot; <a href="sunrise-tetherow.html" class="link" style="border-color:var(--gold);">Community Guide &#8594;</a></div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background-image:url('https://sunriseoregon.com/images/eaglecrest-0142.jpg');"></div>
+        <div class="commbody">
+          <span class="loc">Redmond</span>
+          <h3>Eagle Crest</h3>
+          <p>An established resort community on the Deschutes' high-desert bench near Redmond — golf, trails, and easy Central Oregon living with wide Cascade views.</p>
+          <div class="note">Sunrise-built at Eagle Crest.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-caldera-springs.html" aria-label="Caldera Springs custom homes" style="background-image:url('https://sunriseoregon.com/images/elk-run-dr-7.jpg');"></a>
+        <div class="commbody">
+          <span class="loc">Sunriver</span>
+          <h3><a href="sunrise-caldera-springs.html">Caldera Springs</a></h3>
+          <p>Forest resort living south of Bend, surrounded by lakes, trails, parks, and the amenities of the Sunriver area. Designed for families, recreation, and year-round Central Oregon living.</p>
+          <div class="note">Sunrise built the 2025 COBA Tour of Homes Best of Show here.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background:#34322d;display:flex;align-items:center;justify-content:center;padding:30px;"><img src="https://sunriseoregon.com/images/thornburgh-logo.png" alt="Thornburgh Resort Company" style="width:72%;height:auto;max-height:64%;object-fit:contain;"></div>
+        <div class="commbody">
+          <span class="loc">Cline Buttes · Redmond</span>
+          <h3>Thornburgh Resort</h3>
+          <p>A new destination resort taking shape on Cline Buttes — golf, lodging, and custom homesites on a dramatic high-desert setting, with the Cascades on the horizon. One to watch, like The Peaks 360.</p>
+          <div class="note">Up &amp; coming · early homesites ahead.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub">Ranch &amp; high-desert communities</div>
+    <div class="grid">
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-brasada-ranch.html" aria-label="Brasada Ranch custom homes" style="background-image:url('https://sunriseoregon.com/images/brasada-0016.jpg');"></a>
+        <div class="commbody">
+          <span class="loc">Powell Butte</span>
+          <h3><a href="sunrise-brasada-ranch.html">Brasada Ranch</a></h3>
+          <p>An authentic high-desert ranch resort with sweeping Cascade views, trails, and equestrian amenities — modern-ranch character at home in the landscape.</p>
+          <div class="note">Sunrise builds on lots throughout Brasada.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background-image:url('https://sunriseoregon.com/images/ranch-canyons-0131.jpg');"></div>
+        <div class="commbody">
+          <span class="loc">Terrebonne</span>
+          <h3>Ranch at the Canyons</h3>
+          <p>A gated estate community above the Crooked River canyon, known for its Tuscan-inspired character, vineyards, and big high-desert views near Smith Rock.</p>
+          <div class="note">Estate, Mediterranean, and ranch homes.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background-image:url('https://sunriseoregon.com/images/golden-mantle-4809.jpg');">
+                  </div>
+        <div class="commbody">
+          <span class="loc">Bend · Westside</span>
+          <h3>Tree Farm</h3>
+          <p>A gated westside Bend community set against the foothills and forest, with private trail access and a quiet Northwest sensibility.</p>
+          <div class="note">Sunrise built the award-winning "Golden Mantle" here.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg panel"><span>Acreage &amp; unique lots</span></div>
+        <div class="commbody">
+          <span class="loc">Central Oregon</span>
+          <h3>Ranch &amp; estate land</h3>
+          <p>Equestrian properties, working acreage, and one-of-a-kind parcels across the region — where the site and the home are designed together.</p>
+          <div class="note"><a href="sunrise-ranch-estate.html" class="link" style="border-color:var(--gold);">Ranch &amp; estate properties &#8594;</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub">Bend neighborhoods &amp; new communities</div>
+    <div class="grid">
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-tanager.html" aria-label="Tanager custom homes" style="background:#FBF9F4;display:flex;align-items:center;justify-content:center;padding:30px;"><img src="https://sunriseoregon.com/images/tanager-logo.png" alt="Tanager" style="width:64%;height:auto;max-height:72%;object-fit:contain;"></a>
+        <div class="commbody">
+          <span class="loc">Bend · Westside</span>
+          <h3><a href="sunrise-tanager.html">Tanager</a></h3>
+          <p>Bend's only private waterfront community — 21 forested homesites on the westside, with a regulation water-ski lake, a recreational lake, and Tumalo Creek, minutes from NorthWest Crossing.</p>
+          <div class="note">Sunrise Community Guide &#8212; now available.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background-image:url('https://sunriseoregon.com/images/north-rim-0168.jpg');">
+                  </div>
+        <div class="commbody">
+          <span class="loc">Bend · Awbrey Butte</span>
+          <h3>North Rim</h3>
+          <p>Perched on the northern face of Awbrey Butte with commanding Cascade and high-desert views — elevated westside living, minutes from downtown.</p>
+          <div class="note">Sunrise built the North Rim Tuscan residence here.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <a class="commimg" href="sunrise-westgate.html" aria-label="Westgate custom homes" style="background-image:url('https://sunriseoregon.com/images/westgate-aerial-1.jpg');"></a>
+        <div class="commbody">
+          <span class="loc">Bend · Westside</span>
+          <h3><a href="sunrise-westgate.html">Westgate</a></h3>
+          <p>A luxury forested neighborhood on Bend's far west side — 85 estate homesites of 2.5 to 5 acres beside Shevlin Park, with Cascade Mountain views minutes from downtown.</p>
+          <div class="note">Sunrise Community Guide &#8212; now available.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background:#3a3733;display:flex;align-items:center;justify-content:center;padding:26px;"><img src="https://sunriseoregon.com/images/peaks-360-logo.png" alt="The Peaks 360" style="width:60%;height:auto;max-height:72%;object-fit:contain;"></div>
+        <div class="commbody">
+          <span class="loc">Central Oregon</span>
+          <h3>The Peaks 360</h3>
+          <p>A brand-new Central Oregon community — and Sunrise homes are already in progress here. Among the first to build in a setting designed around the views in every direction.</p>
+          <div class="note">Now under construction with Sunrise.</div>
+        </div>
+      </div>
+
+      <div class="comm">
+        <div class="commimg" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-aerial-0242.jpg');">
+                  </div>
+        <div class="commbody">
+          <span class="loc">Bend</span>
+          <h3>Deschutes River Ranch &amp; beyond</h3>
+          <p>From canyon-edge lots to established westside streets, we build throughout Bend's premier neighborhoods — each home tailored to its street and its owners.</p>
+          <div class="note">Featured by BUILD Magazine.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- BUILDING WITHIN A COMMUNITY -->
+<section class="within">
+  <div class="wrap">
+    <span class="eyebrow">What it takes</span>
+    <div class="cols">
+      <div>
+        <h2>Every community has its own rules. We know them.</h2>
+        <p>The finest sites here sit inside communities that hold their own standards — and a home that ignores them stalls in review or sits awkwardly in its setting. We've been through these processes, and we know the people who administer them, so your home moves smoothly from approval to finished.</p>
+        <div style="margin-top:24px;"><a href="sunrise-the-process.html" class="link" style="color:#F6F1E7;">See the process</a></div>
+      </div>
+      <ul>
+        <li><b>Design review &amp; guidelines</b><br><span style="color:#CFD2C5;font-size:14px;">Height, massing, materials, and color palettes that each community expects.</span></li>
+        <li><b>Architectural review committees</b><br><span style="color:#CFD2C5;font-size:14px;">Submittals and approvals handled cleanly, with relationships that help.</span></li>
+        <li><b>Setbacks, lots &amp; siting</b><br><span style="color:#CFD2C5;font-size:14px;">Placing the home to protect views, light, and privacy within the rules.</span></li>
+        <li><b>HOA &amp; build logistics</b><br><span style="color:#CFD2C5;font-size:14px;">Construction windows, access, and neighbor courtesies, managed for you.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ALSO -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Also in Central Oregon</span>
+    <div class="alsogrid">
+      <div class="alsocard">
+        <h3>Ranch &amp; estate properties</h3>
+        <p>Acreage, equestrian land, and unique parcels where the home and the site are planned as one — including full estate and equestrian build-out.</p>
+        <a href="sunrise-ranch-estate.html" class="link">Ranch &amp; estate</a>
+      </div>
+      <div class="alsocard">
+        <h3>Don't have a lot yet?</h3>
+        <p>We help you find and evaluate land across every community here — what a parcel can become, and what it will truly cost to build on it.</p>
+        <a href="sunrise-the-process.html" class="link">Land &amp; site</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="begin" class="closing" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-0205.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Begin</span>
+    <h2 style="color:#F6F1E7;">Let's find the right community — and build in it.</h2>
+    <p style="color:#E6DECF;max-width:48ch;margin:0 auto 30px;">Tell us where you're looking, or let us help you choose. We'll guide the rest.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="sunrise-begin.html" class="btn light">Begin your home</a>
+      <a href="sunrise-selected-work.html" class="btn light" style="border-color:rgba(243,238,227,.5);">See our work</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" style="height:94px;width:auto;"></div>
+    <p style="margin-top:12px;">Central Oregon Communities &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="sunrise-selected-work.html">Selected Work</a> &nbsp;·&nbsp; <a href="sunrise-the-process.html">The Process</a> &nbsp;·&nbsp; <a href="sunrise-the-key.html">The Key</a></p>
+    <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision</p>
+  </div>
+</footer>
+
+</body>
+</html>
+       

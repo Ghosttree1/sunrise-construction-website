@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="sunrise_favicon_svg.svg" type="image/svg+xml">
+<title>Press &amp; Recognition | Sunrise Construction of Oregon</title>
+<meta name="description" content="Sunrise Construction of Oregon in the press — featured in Western Home Journal, BUILD Magazine, Bend Magazine, and Cascade Business News, and a six-time COBA Tour of Homes Best of Show winner.">
+<link rel="canonical" href="https://sunriseoregon.com/press">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunrise Construction of Oregon">
+<meta property="og:title" content="Press &amp; Recognition | Sunrise Construction of Oregon">
+<meta property="og:description" content="Featured in Western Home Journal, BUILD Magazine, Bend Magazine, and more.">
+<meta property="og:url" content="https://sunriseoregon.com/press">
+<meta property="og:image" content="https://bendmagazine.com/wp-content/uploads/2020/08/TPark_4809_070920.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#23211C;--muted:#6E6A60;--line:#E4DFD4;--paper:#FBF9F4;--cream:#F2EDE3;--gold:#9A7B3F;--forest:#3E4A3A;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);font-weight:300;line-height:1.75;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.12;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 5vw;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .btn{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:1px solid var(--ink);transition:.25s;}
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.light{border-color:#F3EEE3;color:#F3EEE3;}
+  .btn.light:hover{background:#F3EEE3;color:var(--ink);}
+  .link{font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:10;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 5vw;color:#F3EEE3;}
+  .menu{display:flex;gap:28px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;}
+  .menu a:hover{color:var(--gold);}
+  .keylink{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;color:#E2C893 !important;padding-left:26px;border-left:1px solid rgba(243,238,227,.28);}
+  .navbtn{border:1px solid #F3EEE3;padding:10px 20px;}
+  @media(max-width:900px){.menu{display:none;}}
+
+  .hero{position:relative;min-height:58vh;display:flex;align-items:flex-end;background:#1C1A15 center/cover no-repeat;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.45),rgba(20,16,12,.72));}
+  .hero .wrap{position:relative;z-index:2;color:#F6F1E7;padding-bottom:7vh;}
+  .hero h1{font-size:clamp(40px,5.6vw,72px);max-width:16ch;margin:16px 0 16px;}
+  .hero p{font-size:clamp(16px,1.5vw,20px);max-width:54ch;color:#E6DECF;}
+
+  section{padding:clamp(50px,6vw,84px) 0;}
+  .intro{max-width:760px;}
+  .intro h2{font-size:clamp(24px,2.8vw,36px);max-width:22ch;}
+  .intro p{color:var(--muted);margin-top:16px;font-size:17px;}
+
+  .pub{border-top:1px solid var(--line);padding:34px 0;}
+  .pub h3{font-family:'Fraunces';font-size:clamp(22px,2.4vw,28px);margin-bottom:4px;}
+  .pub .k{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+  .art{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .art:last-child{border-bottom:0;}
+  .art .t{font-size:16px;color:var(--ink);}
+  .art .t span{color:var(--muted);font-size:14px;}
+  .art .go{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);white-space:nowrap;border-bottom:1px solid var(--gold);padding-bottom:3px;}
+
+  .closing{position:relative;background:#23211C center/cover no-repeat;color:#F6F1E7;text-align:center;padding:80px 0;}
+  .closing::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.62);}
+  .closing .wrap{position:relative;z-index:2;}
+  .closing h2{font-size:clamp(26px,3vw,40px);margin:16px auto;max-width:22ch;}
+
+  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
+  footer a{color:#CFC8B8;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="brand"><a href="/"><img src="gold_sun_gray_mountain__name.png" alt="Sunrise Construction of Oregon" style="height:84px;width:auto;display:block;"></a></div>
+    <div class="menu">
+      <a href="sunrise-selected-work.html">Our Work</a>
+      <a href="sunrise-the-process.html">The Process</a>
+      <a href="sunrise-communities.html">Central Oregon</a>
+      <a href="sunrise-our-legacy.html">Our Legacy</a>
+      <a href="sunrise-the-key.html" class="keylink" title="For current Sunrise clients">&#9911; The Key</a>
+      <a href="sunrise-begin.html" class="navbtn">Begin</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('https://bendmagazine.com/wp-content/uploads/2020/08/TPark_4809_070920.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Press &amp; recognition</span>
+    <h1>In the magazines, and on the tour.</h1>
+    <p>Our homes have been featured in Central Oregon's and the mountain West's leading design publications — and honored with Best of Show every year we've entered the COBA Tour of Homes since 2018.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section style="padding-bottom:0;">
+  <div class="wrap intro">
+    <span class="eyebrow">Featured in</span>
+    <h2 style="margin-top:14px;">A few of the places our work has appeared.</h2>
+    <p>Click any feature to read it. We keep this page current as new stories publish.</p>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section style="padding-top:36px;">
+  <div class="wrap">
+
+    <div class="pub">
+      <div class="k">Magazine</div>
+      <h3>Western Home Journal</h3>
+      <a class="art" href="https://westernhomejournal.com/bend-oregon/sunrise-construction-of-oregon-bd-spring-25/">
+        <span class="t">North Rim — a Tuscan home on Awbrey Butte <span>· Spring 2025</span></span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://westernhomejournal.com/bend-oregon/sunrise-construction-2/">
+        <span class="t">Building Your Story — the Pronghorn Best of Show home <span>· Spring 2022</span></span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://westernhomejournal.com/bend-oregon/sunrise-construction/">
+        <span class="t">Golden Mantle — timeless craftsmanship in Tree Farm <span>· 2020</span></span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://westernhomejournal.com/bend-oregon/sunrise-construction-of-oregon/">
+        <span class="t">Sunrise Construction of Oregon — builder profile <span>· 2020</span></span><span class="go">Read →</span>
+      </a>
+    </div>
+
+    <div class="pub">
+      <div class="k">Magazine &amp; video</div>
+      <h3>BUILD Magazine</h3>
+      <a class="art" href="https://buildmagazine.com/exclusive-home-tour-with-sunrise-construction-of-oregon-bend-or/">
+        <span class="t">Exclusive home tour — Deschutes River Ranch, with Chris <span>· video</span></span><span class="go">Watch →</span>
+      </a>
+      <a class="art" href="https://buildmagazine.com/classical-bend-masterpiece-bend-or/">
+        <span class="t">A classical Bend masterpiece — Ranch at the Canyons <span>· Terrebonne</span></span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://buildmagazine.com/blog/spectacular-southwestern-ranch-with-views-of-smith-rock-in-bend-or/">
+        <span class="t">A spectacular Southwestern ranch with views of Smith Rock</span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://buildmagazine.com/contractor/sunrise-construction-of-oregon/">
+        <span class="t">Sunrise Construction of Oregon — featured builder</span><span class="go">Read →</span>
+      </a>
+    </div>
+
+    <div class="pub">
+      <div class="k">Magazine</div>
+      <h3>Bend Magazine</h3>
+      <a class="art" href="https://bendmagazine.emagazines.com/issue/bend-home-design/summer-2025/bend-home-design-page-60?cs=library#p60">
+        <span class="t">Ranch at the Canyons — Bend Home + Design <span>· Summer 2025</span></span><span class="go">Read →</span>
+      </a>
+      <a class="art" href="https://bendmagazine.com/peek-inside-the-tree-farm-house-winning-best-of-show-at-the-coba-tour-of-homes/">
+        <span class="t">Inside the Tree Farm house that won Best of Show <span>· 2020</span></span><span class="go">Read →</span>
+      </a>
+    </div>
+
+    <div class="pub">
+      <div class="k">Business press</div>
+      <h3>Cascade Business News</h3>
+      <a class="art" href="https://cascadebusnews.com/announcing-coba-toh-award-winners/">
+        <span class="t">COBA Tour of Homes award winners <span>· 2024</span></span><span class="go">Read →</span>
+      </a>
+    </div>
+
+    <div class="pub">
+      <div class="k">Magazine</div>
+      <h3>Modern Home Builder</h3>
+      <a class="art" href="https://modernhb.com/news/learn-how-sunrise-construction-of-oregon-is-improving-the-customer-experience/">
+        <span class="t">How Sunrise Construction of Oregon is improving the customer experience</span><span class="go">Read →</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-0205.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Begin</span>
+    <h2 style="color:#F6F1E7;">Let's build something worth writing about.</h2>
+    <p style="color:#E6DECF;max-width:44ch;margin:0 auto 30px;">Start the conversation about your Central Oregon custom home.</p>
+    <a href="sunrise-begin.html" class="btn light">Begin your home</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" style="height:94px;width:auto;"></div>
+    <p style="margin-top:12px;">Press &amp; Recognition &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="sunrise-selected-work.html">Selected Work</a> &nbsp;·&nbsp; <a href="sunrise-the-key.html">The Key</a></p>
+    <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</p>
+  </div>
+</footer>
+
+</body>
+</html>

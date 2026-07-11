@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="sunrise_favicon_svg.svg" type="image/svg+xml">
+<title>Selected Work — Custom Homes Across Central Oregon | Sunrise Construction of Oregon</title>
+<meta name="description" content="A portfolio of distinctive Sunrise custom homes across Central Oregon — modern, mountain, ranch, Tuscan and resort styles in Bend, Redmond, Sunriver, Terrebonne and beyond.">
+<link rel="canonical" href="https://sunriseoregon.com/selected-work">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunrise Construction of Oregon">
+<meta property="og:title" content="Selected Work — Custom Homes Across Central Oregon | Sunrise Construction">
+<meta property="og:description" content="A portfolio of distinctive Sunrise custom homes across Central Oregon — many styles, many communities.">
+<meta property="og:url" content="https://sunriseoregon.com/selected-work">
+<meta property="og:image" content="https://sunriseoregon.com/images/juniper-preserve-estate.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#23211C;--muted:#6E6A60;--line:#E4DFD4;--paper:#FBF9F4;--cream:#F2EDE3;--gold:#9A7B3F;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);font-weight:300;line-height:1.7;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.12;}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 5vw;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .btn{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:1px solid var(--ink);transition:.25s;}
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.light{border-color:#F3EEE3;color:#F3EEE3;}
+  .btn.light:hover{background:#F3EEE3;color:var(--ink);}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:10;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 5vw;color:#F3EEE3;}
+  .brand{font-family:'Fraunces';font-size:22px;letter-spacing:4px;}
+  .menu{display:flex;gap:28px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;}
+  .menu a:hover{color:var(--gold);}
+  .keylink{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;color:#E2C893 !important;padding-left:26px;border-left:1px solid rgba(243,238,227,.28);}
+  .navbtn{border:1px solid #F3EEE3;padding:10px 20px;}
+  @media(max-width:900px){.menu{display:none;}}
+
+  .hero{position:relative;min-height:62vh;display:flex;align-items:flex-end;background:#1C1A15 center/cover no-repeat;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.5),rgba(20,16,12,.72));}
+  .hero .wrap{position:relative;z-index:2;color:#F6F1E7;padding-bottom:7vh;}
+  .hero h1{font-size:clamp(40px,5.6vw,72px);max-width:18ch;margin:16px 0 16px;}
+  .hero p{font-size:clamp(16px,1.5vw,20px);max-width:56ch;color:#E6DECF;}
+
+  .filters{position:sticky;top:0;z-index:9;background:var(--paper);border-bottom:1px solid var(--line);padding:18px 0;}
+  .filters .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .fbtn{display:inline-block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter';transition:.2s;user-select:none;}
+  .fbtn:hover{border-color:var(--ink);color:var(--ink);}
+  .fbtn.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  .gallery{padding:46px 0 90px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
+  .proj{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--cream) center/cover no-repeat;cursor:pointer;}
+  .proj .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,16,12,.78) 0%,rgba(20,16,12,.05) 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#F6F1E7;transition:.3s;}
+  .proj:hover .ov{background:linear-gradient(0deg,rgba(20,16,12,.85) 0%,rgba(20,16,12,.25) 70%);}
+  .proj .s{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#E2C893;}
+  .proj .t{font-family:'Fraunces';font-size:22px;margin-top:4px;}
+  .proj .c{font-size:13px;color:#D8D1C2;margin-top:2px;}
+  .badge{position:absolute;top:16px;left:16px;z-index:2;color:#F6EBCF;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:500;background:rgba(20,16,12,.62);padding:7px 12px;border:1px solid rgba(224,165,38,.5);border-radius:2px;backdrop-filter:blur(2px);}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:60px 0;display:none;}
+
+  .closing{position:relative;background:#23211C center/cover no-repeat;color:#F6F1E7;text-align:center;padding:90px 0;}
+  .closing::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.62);}
+  .closing .wrap{position:relative;z-index:2;}
+  .closing h2{font-size:clamp(28px,3.4vw,44px);margin:16px auto;max-width:18ch;}
+
+  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
+  .footbrand{font-family:'Fraunces';font-size:22px;letter-spacing:3px;color:#F6F1E7;}
+  footer a{color:#CFC8B8;}
+
+  /* CSS-only filtering (works without JavaScript) */
+  .filterstate{position:absolute;opacity:0;pointer-events:none;}
+  #f-modern:checked ~ .filters label[for="f-modern"],
+  #f-mountain:checked ~ .filters label[for="f-mountain"],
+  #f-traditional:checked ~ .filters label[for="f-traditional"],
+  #f-resort:checked ~ .filters label[for="f-resort"],
+  #f-ranch:checked ~ .filters label[for="f-ranch"],
+  #f-all:checked ~ .filters label[for="f-all"]{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  #f-modern:checked ~ .gallery .proj,
+  #f-mountain:checked ~ .gallery .proj,
+  #f-traditional:checked ~ .gallery .proj,
+  #f-resort:checked ~ .gallery .proj,
+  #f-ranch:checked ~ .gallery .proj{display:none;}
+  #f-modern:checked ~ .gallery .proj[data-style="modern"],
+  #f-mountain:checked ~ .gallery .proj[data-style="mountain"],
+  #f-traditional:checked ~ .gallery .proj[data-style="traditional"],
+  #f-resort:checked ~ .gallery .proj[data-style="resort"],
+  #f-ranch:checked ~ .gallery .proj[data-style="ranch"]{display:block;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="brand"><a href="/"><img src="gold_sun_gray_mountain__name.png" alt="Sunrise Construction of Oregon" style="height:84px;width:auto;display:block;"></a></div>
+    <div class="menu">
+      <a href="sunrise-the-process.html">The Process</a>
+      <a href="sunrise-luxury-communities.html">Community Guides</a>
+      <a href="/#resources">Resources</a>
+      <a href="sunrise-our-legacy.html">Our Legacy</a>
+      <a href="sunrise-the-key.html" class="keylink" title="For current Sunrise clients">&#9911; The Key</a>
+      <a href="sunrise-begin.html" class="navbtn">Begin</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-aerial-0261.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Selected work</span>
+    <h1>Many homes. Many styles. One standard.</h1>
+    <p>A range of distinctive custom homes across Central Oregon&mdash;because the look should always be yours, not ours. Filter by style to see how far that range goes.</p>
+  </div>
+</section>
+
+<!-- FILTER STATE (CSS-only) -->
+<input class="filterstate" type="radio" name="workfilter" id="f-all" checked>
+<input class="filterstate" type="radio" name="workfilter" id="f-modern">
+<input class="filterstate" type="radio" name="workfilter" id="f-mountain">
+<input class="filterstate" type="radio" name="workfilter" id="f-traditional">
+<input class="filterstate" type="radio" name="workfilter" id="f-resort">
+<input class="filterstate" type="radio" name="workfilter" id="f-ranch">
+
+<!-- FILTERS -->
+<div class="filters">
+  <div class="wrap">
+    <label class="fbtn" for="f-all">All work</label>
+    <label class="fbtn" for="f-modern">Modern</label>
+    <label class="fbtn" for="f-mountain">Mountain &amp; lodge</label>
+    <label class="fbtn" for="f-traditional">Traditional &amp; transitional</label>
+    <label class="fbtn" for="f-resort">Resort &amp; golf</label>
+    <label class="fbtn" for="f-ranch">Ranch &amp; estate</label>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="grid" id="grid">
+
+      <a class="proj" data-style="modern" href="sunrise-project-deschutes-river-ranch.html" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-aerial-0242.jpg');">
+        <span class="badge">COBA · Best of Show 2023</span>
+        <div class="ov"><span class="s">Contemporary Canyon Residence</span><span class="t">Deschutes River Ranch</span><span class="c">Bend, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="modern" href="sunrise-project-wildhorse.html" style="background-image:url('https://sunriseoregon.com/images/wildhorse-0011.jpg');">
+        <div class="ov"><span class="s">Contemporary High-Desert Home</span><span class="t">Wildhorse</span><span class="c">Brasada Ranch · Powell Butte</span></div>
+      </a>
+
+      <a class="proj" data-style="traditional" href="sunrise-project-ranch-canyons.html" style="background-image:url('https://sunriseoregon.com/images/ranch-canyons-0131.jpg');">
+        <div class="ov"><span class="s">Tuscan-Inspired Estate</span><span class="t">Cliff Side Ranch Estate</span><span class="c">Ranch at the Canyons · Terrebonne</span></div>
+      </a>
+
+      <a class="proj" data-style="traditional" href="sunrise-project-north-rim.html" style="background-image:url('https://sunriseoregon.com/images/north-rim-0168.jpg');">
+        <div class="ov"><span class="s">European-Inspired Estate</span><span class="t">North Rim</span><span class="c">Awbrey Butte · Bend, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="mountain" href="sunrise-project-golden-mantle.html" style="background-image:url('https://sunriseoregon.com/images/golden-mantle-4809.jpg');">
+        <span class="badge">COBA · Best of Show 2020</span>
+        <div class="ov"><span class="s">Northwest Lodge</span><span class="t">Golden Mantle</span><span class="c">Tree Farm · Bend, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="resort" href="sunrise-project-eagle-crest.html" style="background-image:url('https://sunriseoregon.com/images/eaglecrest-0142.jpg');">
+        <span class="badge">COBA · Best of Show 2024</span>
+        <div class="ov"><span class="s">Northwest Transitional Resort Home</span><span class="t">Eagle Crest</span><span class="c">Redmond, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="ranch" href="sunrise-project-southwestern-ranch.html" style="background-image:url('https://sunriseoregon.com/images/smith-rock-aerial-front.jpg');">
+        <div class="ov"><span class="s">Southwestern Equestrian Estate</span><span class="t">Southwestern Ranch</span><span class="c">Terrebonne · Smith Rock</span></div>
+      </a>
+
+      <a class="proj" data-style="traditional" href="sunrise-project-ranch-canyons-2018.html" style="background-image:url('https://sunriseoregon.com/images/ratc-exterior.jpg');">
+        <span class="badge">COBA · Best of Show 2018</span>
+        <div class="ov"><span class="s">Old-World Ranch Estate</span><span class="t">Ranch at the Canyons</span><span class="c">Terrebonne · 2018 Tour Home</span></div>
+      </a>
+
+      <a class="proj" data-style="modern" href="sunrise-project-the-lookout.html" style="background-image:url('https://sunriseoregon.com/images/lookout-5800.jpg');">
+        <div class="ov"><span class="s">Butte-Top Contemporary Residence</span><span class="t">The Lookout</span><span class="c">Powell Butte, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="resort" href="sunrise-project-pronghorn.html" style="background-image:url('https://sunriseoregon.com/images/pronghorn-0156.jpg');">
+        <span class="badge">COBA · Best of Show 2021</span>
+        <div class="ov"><span class="s">High-Desert Resort Home</span><span class="t">Juniper Preserve</span><span class="c">Pronghorn · Bend, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="ranch" href="sunrise-project-brasada.html" style="background-image:url('https://sunriseoregon.com/images/brasada-0016.jpg');">
+        <div class="ov"><span class="s">Timber, Stone &amp; Steel</span><span class="t">Brasada Ranch</span><span class="c">Powell Butte, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="resort" href="sunrise-project-caldera.html" style="background-image:url('https://sunriseoregon.com/images/elk-run-dr-7.jpg');">
+        <span class="badge">COBA · Best of Show 2025</span>
+        <div class="ov"><span class="s">Northwest Contemporary Resort Home</span><span class="t">Caldera Springs</span><span class="c">Sunriver, Oregon</span></div>
+      </a>
+
+      <a class="proj" data-style="modern" href="sunrise-project-wooden-trestle.html" style="background-image:url('https://sunriseoregon.com/images/wooden-trestle-aerial.jpg');">
+        <div class="ov"><span class="s">Modern High-Desert Home</span><span class="t">Wooden Trestle</span><span class="c">Brasada Ranch · Powell Butte</span></div>
+      </a>
+
+      <a class="proj" data-style="modern" href="sunrise-project-starview.html" style="background-image:url('https://sunriseoregon.com/images/starview-0115.jpg');">
+        <div class="ov"><span class="s">Contemporary High-Desert Home</span><span class="t">Starview</span><span class="c">Brasada Ranch · Powell Butte</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="begin" class="closing" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-0205.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Begin</span>
+    <h2 style="color:#F6F1E7;">Picture your home among these.</h2>
+    <p style="color:#E6DECF;max-width:46ch;margin:0 auto 30px;">Whatever your style, we build it distinctively. Let's start the conversation.</p>
+    <a href="sunrise-begin.html" class="btn light">Begin your home</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" style="height:94px;width:auto;"></div>
+    <p style="margin-top:12px;">Selected Work &nbsp;·&nbsp; <a href="/">Back to home</a> &nbsp;·&nbsp; <a href="sunrise-the-process.html">The Process</a> &nbsp;·&nbsp; <a href="sunrise-the-key.html">The Key</a></p>
+    <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</p>
+  </div>
+</footer>
+
+</body>
+</html>
+                                                                                                                                

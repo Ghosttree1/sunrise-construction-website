@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ============================================================================
+  SUNRISE CONSTRUCTION — COMMUNITY PAGE TEMPLATE
+  Standard framework for every community page (Caldera Springs, Juniper
+  Preserve, Bend, Westgate, Peaks 360, Ranch at the Canyons, Awbrey Butte,
+  Broken Top, Sisters, etc.). Modeled on the Brasada Ranch page.
+
+  RULES FOR EACH NEW COMMUNITY PAGE:
+  - Keep this exact section order and visual design. Do NOT redesign.
+  - Write 100% UNIQUE content per community. Never copy Brasada's prose.
+  - Preserve Sunrise's voice: truly custom homes, ideas brought to life,
+    owner involvement, close collaboration, timeless quality, relationships.
+  - Do not invent community rules, statistics, awards, or "approved builder"
+    claims unless verified for that community.
+  - External resource links must be OFFICIAL community sites only, open in a
+    new tab (target="_blank" rel="noopener noreferrer"), and stay minimal.
+  - One <h1> only. Canonical = resolvable URL (https://sunriseoregon.com/sunrise-<slug>).
+  - Update WebPage + BreadcrumbList + FAQPage JSON-LD to match the page.
+  Replace every {{TOKEN}} and each <!-- WRITE UNIQUE ... --> block.
+  ============================================================================
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="sunrise_favicon_svg.svg" type="image/svg+xml">
+<title>{{COMMUNITY}} Custom Home Builder | Sunrise Construction</title>
+<meta name="description" content="{{~150-CHAR UNIQUE META: what Sunrise does at this community, where, owner-led, experience}}">
+<link rel="canonical" href="https://sunriseoregon.com/sunrise-{{SLUG}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunrise Construction of Oregon">
+<meta property="og:title" content="{{COMMUNITY}} Custom Home Builder | Sunrise Construction">
+<meta property="og:description" content="{{UNIQUE OG DESCRIPTION}}">
+<meta property="og:url" content="https://sunriseoregon.com/sunrise-{{SLUG}}">
+<meta property="og:image" content="{{HERO_IMAGE_URL}}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://sunriseoregon.com/sunrise-{{SLUG}}#webpage","url":"https://sunriseoregon.com/sunrise-{{SLUG}}","name":"{{COMMUNITY}} Custom Home Builder | Sunrise Construction","description":"{{UNIQUE DESCRIPTION}}","about":{"@id":"https://sunriseoregon.com/#business"},"publisher":{"@id":"https://sunriseoregon.com/#business"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Central Oregon","item":"https://sunriseoregon.com/sunrise-communities"},{"@type":"ListItem","position":2,"name":"{{COMMUNITY}}","item":"https://sunriseoregon.com/sunrise-{{SLUG}}"}]}</script>
+<!-- FAQPage JSON-LD: mirror the visible FAQ answers below, verbatim. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"{{Q1}}","acceptedAnswer":{"@type":"Answer","text":"{{A1}}"}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#23211C;--muted:#6E6A60;--line:#E4DFD4;--paper:#FBF9F4;--cream:#F2EDE3;--gold:#9A7B3F;--forest:#3E4A3A;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);font-weight:300;line-height:1.75;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.15;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 5vw;}
+  .narrow{max-width:760px;margin:0 auto;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .btn{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:1px solid var(--ink);transition:.25s;}
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.light{border-color:#F3EEE3;color:#F3EEE3;}
+  .btn.light:hover{background:#F3EEE3;color:var(--ink);}
+  .link{font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;}
+  header{position:absolute;top:0;left:0;right:0;z-index:10;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 5vw;color:#F3EEE3;}
+  .menu{display:flex;gap:28px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;}
+  .menu a:hover{color:var(--gold);}
+  .keylink{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;color:#E2C893 !important;padding-left:26px;border-left:1px solid rgba(243,238,227,.28);}
+  .navbtn{border:1px solid #F3EEE3;padding:10px 20px;}
+  @media(max-width:900px){.menu{display:none;}}
+  .hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;background:#2A2620 center/cover no-repeat;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.2),rgba(20,16,12,.72));}
+  .hero .wrap{position:relative;z-index:2;color:#F6F1E7;padding-bottom:7vh;}
+  .hero .crumb{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#E2C893;}
+  .hero h1{font-size:clamp(38px,5.4vw,72px);margin:14px 0 14px;max-width:16ch;}
+  .hero p{font-size:clamp(16px,1.5vw,20px);max-width:52ch;color:#E6DECF;}
+  .facts{border-bottom:1px solid var(--line);}
+  .facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 5vw;}
+  .facts .k{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+  .facts .v{font-family:'Fraunces';font-size:18px;margin-top:6px;color:var(--ink);}
+  .facts .v.exp{font-size:15px;line-height:1.55;}
+  @media(max-width:760px){.facts .wrap{grid-template-columns:1fr 1fr;gap:22px;}}
+  section{padding:clamp(54px,7vw,90px) 0;}
+  .story p{font-size:18px;color:#3A382F;margin-bottom:24px;}
+  .story p.lead{font-family:'Fraunces';font-size:clamp(22px,2.6vw,30px);line-height:1.4;color:var(--ink);margin-bottom:28px;}
+  .story h2{font-size:clamp(24px,2.8vw,34px);margin:0 0 22px;}
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:44px 5vw;text-align:center;}
+  .trust .n{font-family:'Fraunces';font-size:clamp(26px,3.2vw,38px);color:var(--gold);line-height:1;}
+  .trust .l{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:12px;}
+  @media(max-width:640px){.trust .wrap{grid-template-columns:1fr;gap:26px;}}
+  .homes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px;}
+  @media(max-width:760px){.homes{grid-template-columns:1fr;}}
+  .home{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--cream) center/cover no-repeat;}
+  .home .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,16,12,.78) 0%,rgba(20,16,12,.05) 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#F6F1E7;transition:.3s;}
+  .home:hover .ov{background:linear-gradient(0deg,rgba(20,16,12,.85) 0%,rgba(20,16,12,.25) 70%);}
+  .home .s{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#E2C893;}
+  .home .t{font-family:'Fraunces';font-size:23px;margin-top:4px;}
+  .home .cap{font-size:12px;letter-spacing:.6px;color:#E8D3A4;margin-top:9px;}
+  .alt{background:var(--cream);}
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:36px;}
+  .cols h3{font-size:19px;margin-bottom:8px;}
+  .cols p{font-size:15px;color:var(--muted);}
+  @media(max-width:760px){.cols{grid-template-columns:1fr;gap:24px;}}
+  .mapfig{margin-top:34px;border:1px solid var(--line);background:#F6F2E9;padding:10px;}
+  .mapfig svg{display:block;width:100%;height:auto;}
+  .mapcap{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:14px;text-align:center;}
+  .faq details{border-bottom:1px solid var(--line);}
+  .faq details:first-of-type{border-top:1px solid var(--line);}
+  .faq summary{font-family:'Fraunces';font-size:clamp(17px,1.9vw,20px);padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:24px;color:var(--ink);}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1;flex:none;}
+  .faq details[open] summary::after{content:"\2013";}
+  .faq .a{padding:0 0 26px;max-width:74ch;}
+  .faq .a p{font-size:16px;color:#3A382F;margin-bottom:14px;}
+  .faq .a p:last-child{margin-bottom:0;}
+  .res{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;}
+  .res a{display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);padding:22px 20px;background:#fff;transition:.25s;min-height:132px;}
+  .res a:hover{border-color:var(--gold);background:var(--cream);transform:translateY(-2px);}
+  .res .rk{font-family:'Fraunces';font-size:18px;color:var(--ink);}
+  .res .rd{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5;}
+  .res .rx{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:16px;}
+  @media(max-width:900px){.res{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.res{grid-template-columns:1fr;}}
+  .intro{color:#3A382F;font-size:17px;max-width:64ch;margin-top:14px;}
+  .statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+  .stat{text-align:center;padding:30px 18px;border:1px solid var(--line);background:#fff;}
+  .stat .n{font-family:'Fraunces';font-size:clamp(26px,3.2vw,38px);color:var(--gold);line-height:1;}
+  .stat .l{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:12px;}
+  @media(max-width:640px){.statrow{grid-template-columns:1fr;gap:12px;}}
+  .recent{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;}
+  @media(max-width:860px){.recent{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.recent{grid-template-columns:1fr;}}
+  .rc{display:flex;flex-direction:column;border:1px solid var(--line);background:#fff;overflow:hidden;}
+  .rc .ph{aspect-ratio:16/10;background:var(--cream) center/cover no-repeat;}
+  .rc .bd{padding:20px 22px;}
+  .rc .rl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+  .rc .rt{font-family:'Fraunces';font-size:19px;margin-top:5px;}
+  .rc .ry{font-size:12px;letter-spacing:1px;color:var(--gold);margin-top:6px;}
+  .rc .rdesc{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.55;}
+  .rc .rmore{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:14px;display:inline-block;}
+  .commrow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px;}
+  .commrow .c{border:1px solid var(--line);padding:22px 20px;background:#fff;transition:.25s;}
+  .commrow a.c:hover{border-color:var(--gold);background:var(--cream);}
+  .commrow .cn{font-family:'Fraunces';font-size:18px;color:var(--ink);}
+  .commrow .cs{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:9px;}
+  @media(max-width:760px){.commrow{grid-template-columns:1fr 1fr;}}
+  .closing{position:relative;background:#23211C center/cover no-repeat;color:#F6F1E7;text-align:center;padding:96px 0;}
+  .closing::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.64);}
+  .closing .wrap{position:relative;z-index:2;}
+  .closing h2{font-size:clamp(28px,3.4vw,44px);margin:16px auto 4px;max-width:22ch;}
+  .closing p{color:#E6DECF;max-width:52ch;margin:18px auto 30px;}
+  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
+  .footbrand img{height:94px;width:auto;}
+  footer a{color:#CFC8B8;}
+</style>
+</head>
+<body>
+
+<!-- HEADER: shared site nav (copy exactly from any current page) -->
+<header><nav class="nav">
+  <div><a href="/"><img src="gold_sun_gray_mountain__name.png" alt="Sunrise Construction of Oregon" style="height:84px;width:auto;display:block;"></a></div>
+  <div class="menu">
+    <a href="sunrise-selected-work.html">Our Work</a>
+    <a href="sunrise-the-process.html">The Process</a>
+    <a href="sunrise-luxury-communities.html">Community Guides</a>
+    <a href="sunrise-resources.html">Resources</a>
+    <a href="sunrise-our-legacy.html">Our Legacy</a>
+    <a href="sunrise-the-key.html" class="keylink" title="For current Sunrise clients">&#9911; The Key</a>
+    <a href="sunrise-begin.html" class="navbtn">Begin</a>
+  </div>
+</nav></header>
+
+<!-- 1. HERO — H1 "{{COMMUNITY}} Custom Home Builder" + one unique subtitle line -->
+<section class="hero" style="background-image:url('{{HERO_IMAGE_URL_w1920}}');">
+  <div class="wrap">
+    <div class="crumb"><a href="sunrise-communities.html" style="color:#E2C893;">Central Oregon</a> &nbsp;/&nbsp; {{COMMUNITY}}</div>
+    <h1>{{COMMUNITY}} Custom Home Builder</h1>
+    <p><!-- WRITE UNIQUE: what Sunrise builds here, where, owner-led framing --></p>
+  </div>
+</section>
+
+<!-- 2. FACTS — 4 cols; 4th = Sunrise experience (real numbers only) -->
+<div class="facts"><div class="wrap">
+  <div><div class="k">Community</div><div class="v">{{COMMUNITY, LOCALE}}</div></div>
+  <div><div class="k">Setting</div><div class="v">{{SETTING}}</div></div>
+  <div><div class="k">Amenities</div><div class="v">{{AMENITIES}}</div></div>
+  <div><div class="k">Sunrise experience</div><div class="v exp">{{N}}+ custom homes<br>{{Whole-home rejuvenations / other}}<br>25+ years in Central Oregon</div></div>
+</div></div>
+
+<!-- 3. STORY — Sunrise voice; what we do + why different + real experience here -->
+<section><div class="wrap narrow story">
+  <p class="lead"><!-- WRITE UNIQUE lead line --></p>
+  <!-- WRITE UNIQUE: bespoke homes, owner (Chris) involvement, collaboration, this community's realities -->
+  <p><a href="sunrise-the-process.html" style="color:var(--gold);border-bottom:1px solid var(--gold);">See how we build &#8594;</a></p>
+  <p style="font-size:14px;letter-spacing:.5px;color:var(--muted);margin-top:6px;">A custom home builder serving {{COMMUNITY}} and Central Oregon.</p>
+</div></section>
+
+<!-- 4. BUILT ON EXPERIENCE / TRUST — place AFTER "Building within" and BEFORE "Featured homes".
+     Heading + optional short editorial + 3 Experience Statistics callouts. Real numbers only. -->
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">Why Sunrise</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;max-width:26ch;">Built on Experience. Chosen by Reputation.</h2>
+  <!-- OPTIONAL: short trust paragraph unique to this community. Do not exaggerate. -->
+  <div class="statrow">
+    <div class="stat"><div class="n">25+</div><div class="l">Years in Central Oregon</div></div>
+    <div class="stat"><div class="n">{{N}}+</div><div class="l">Homes at {{COMMUNITY}}</div></div>
+    <div class="stat"><div class="n">{{Approved / Award / etc}}</div><div class="l">{{supporting label}}</div></div>
+  </div>
+</div></section>
+
+<!-- 5. OUR WORK — project cards; DISTINCT architectural label per home + descriptive CTA -->
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">Our work at {{COMMUNITY}}</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;">Homes we've built at {{COMMUNITY}}.</h2>
+  <p style="color:var(--muted);max-width:60ch;"><!-- WRITE UNIQUE --></p>
+  <div class="homes">
+    <a class="home" href="{{PROJECT_1}}.html" style="background-image:url('{{IMG_1}}');">
+      <div class="ov"><span class="s">{{DISTINCT LABEL}}</span><span class="t">{{PROJECT NAME}}</span><span class="cap">View the {{name}} custom home &#8594;</span></div>
+    </a>
+    <!-- repeat cards for real Sunrise homes in THIS community only -->
+  </div>
+  <div style="margin-top:32px;"><a href="sunrise-selected-work.html" class="link">See all selected work &#8594;</a></div>
+</div></section>
+
+<!-- 6. WHY BUILD — editorial, unique to this community -->
+<section><div class="wrap narrow story">
+  <span class="eyebrow">Why here</span>
+  <h2 style="margin:14px 0 24px;">Why Build in {{COMMUNITY}}?</h2>
+  <!-- WRITE UNIQUE editorial (5 short paragraphs): the feeling of the place, what draws
+       clients here, homesite considerations, architectural review, what makes the best homes here -->
+</div></section>
+
+<!-- 7. ORIENTATION MAP — elegant static SVG; adjust place dots/labels to THIS community.
+     Keep it small and premium — never a large interactive Google Maps embed. -->
+<section class="alt mapsec"><div class="wrap">
+  <span class="eyebrow">Where it is</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;">{{COMMUNITY}}, {{one-line placement}}.</h2>
+  <p style="color:var(--muted);max-width:60ch;"><!-- WRITE UNIQUE placement line --></p>
+  <figure class="mapfig">
+    <!-- Reuse the Brasada SVG map pattern: light rect bg, faint juniper dots, thin route
+         lines, ink dots + Inter uppercase labels for nearby towns/airport, and THIS
+         community highlighted with a gold dot + ring + Fraunces label. viewBox 0 0 1000 520. -->
+  </figure>
+  <p class="mapcap">Approximate orientation · Central Oregon</p>
+</div></section>
+
+<!-- 8. BUILDING HERE — 3 practical columns unique to this community -->
+<section><div class="wrap">
+  <span class="eyebrow">Building within {{COMMUNITY}}</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;max-width:24ch;">Built for the community, and for the way you'll live in it.</h2>
+  <div class="cols">
+    <div><h3>{{Point 1}}</h3><p><!-- unique --></p></div>
+    <div><h3>{{Point 2}}</h3><p><!-- unique --></p></div>
+    <div><h3>{{Point 3}}</h3><p><!-- unique --></p></div>
+  </div>
+  <div style="margin-top:34px;"><a href="sunrise-guide-building-in-a-community.html" class="link">How we build within a community &#8594;</a></div>
+</div></section>
+
+<!-- 9. FAQ — use <details>; mirror answers into FAQPage JSON-LD above. Tailor to this community. -->
+<section class="alt faq"><div class="wrap narrow">
+  <span class="eyebrow">Good questions</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 30px;">Frequently asked questions.</h2>
+  <details><summary>{{Question}}</summary><div class="a"><p>{{Answer}}</p></div></details>
+  <!-- repeat details for each FAQ -->
+</div></section>
+
+<!-- 9b. RECENTLY COMPLETED — reusable Community Activity component. Supports 3 content levels.
+     Never publish homeowner street addresses or identifying info. Never invent projects/years.
+     Populate only with true data; the section is designed to expand over time. -->
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">Recently completed</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;">Recent work at {{COMMUNITY}}.</h2>
+  <p class="intro">A growing record of homes Sunrise has completed within the community. It expands as new projects are finished and photography becomes available.</p>
+  <div class="recent">
+    <!-- LEVEL 1 — completed project WITH photography: photo + project + short description + link -->
+    <div class="rc">
+      <div class="ph" style="background-image:url('{{IMG}}');"></div>
+      <div class="bd">
+        <div class="rl">{{New custom home / etc}}</div>
+        <div class="rt">{{Project name}}</div>
+        <div class="rdesc">{{Short description}}</div>
+        <a href="{{project}}.html" class="rmore">View the home &#8594;</a>
+      </div>
+    </div>
+    <!-- LEVEL 2 — limited photography: one image + short summary (no link needed) -->
+    <div class="rc">
+      <div class="ph" style="background-image:url('{{IMG}}');"></div>
+      <div class="bd"><div class="rl">{{Type}}</div><div class="rt">{{Project name}}</div><div class="rdesc">{{Short summary}}</div></div>
+    </div>
+    <!-- LEVEL 3 — no publishable photography: project name/internal title + general location + completion year IF known -->
+    <div class="rc">
+      <div class="bd">
+        <div class="rl">{{Whole-home rejuvenation / new home}}</div>
+        <div class="rt">{{Project name or internal title}}</div>
+        <div class="ry">{{Completion year — omit if unknown}}</div>
+        <div class="rdesc">General location: within {{COMMUNITY}}. {{Optional note, e.g. imagery coming soon}}</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 9c. RELATED COMMUNITIES — link to published community pages; use non-link placeholders for
+     unpublished ones ("Guide coming soon"). Never create broken links. -->
+<section><div class="wrap">
+  <span class="eyebrow">More of Central Oregon</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;">Explore Other Central Oregon Communities</h2>
+  <p class="intro">Sunrise builds throughout the region. More community guides are on the way.</p>
+  <div class="commrow">
+    <!-- Published: <a class="c" href="sunrise-{{slug}}.html"><div class="cn">{{Name}}</div><div class="cs">View community</div></a> -->
+    <!-- Unpublished placeholder (non-link): -->
+    <div class="c"><div class="cn">{{Community}}</div><div class="cs">Guide coming soon</div></div>
+  </div>
+  <div style="margin-top:28px;"><a href="sunrise-luxury-communities.html" class="link">See all Community Guides &#8594;</a></div>
+</div></section>
+
+<!-- 10. LIFE BEYOND THE HOME — OFFICIAL community resources only; new tab; keep minimal -->
+<section><div class="wrap">
+  <span class="eyebrow">Life beyond the home</span>
+  <h2 style="font-size:clamp(24px,2.8vw,34px);margin:14px 0 4px;max-width:26ch;">Building a home is only part of the decision.</h2>
+  <div class="narrow" style="margin:0;"><p style="color:#3A382F;font-size:17px;margin-top:14px;">Choosing the right community matters just as much as choosing the right builder. We've always believed choosing where you build is just as important as choosing who builds it. If you're still exploring {{COMMUNITY}}, these official community resources are an excellent place to learn more about the lifestyle, amenities, and available homesites.</p></div>
+  <div class="res">
+    <a href="{{OFFICIAL_URL}}" target="_blank" rel="noopener noreferrer">
+      <div><div class="rk">{{Resource}}</div><div class="rd">{{short description}}</div></div><span class="rx">Explore &#8599;</span>
+    </a>
+    <!-- add only relevant official resources: site, golf, dining, spa, trails/amenities, real estate -->
+  </div>
+</div></section>
+
+<!-- 11. CLOSING CTA — confident, advisory (not salesy); links to Begin -->
+<section class="closing" style="background-image:url('{{CLOSING_IMAGE_URL_w1920}}');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">Begin</span>
+    <h2 style="color:#F6F1E7;">Planning a home in {{COMMUNITY}}?</h2>
+    <p>Let's begin the conversation before plans are finalized. Early collaboration leads to better homes, smoother approvals, and smarter decisions from the very beginning.</p>
+    <a href="sunrise-begin.html" class="btn light">Begin the conversation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" loading="lazy" decoding="async"></div>
+  <p style="margin-top:12px;">{{COMMUNITY}} &nbsp;·&nbsp; <a href="sunrise-luxury-communities.html">Community Guides</a> &nbsp;·&nbsp; <a href="sunrise-selected-work.html">Selected Work</a> &nbsp;·&nbsp; <a href="sunrise-the-process.html">The Process</a> &nbsp;·&nbsp; <a href="/">Home</a></p>
+  <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</p>
+</footer>
+
+</body>
+</html>

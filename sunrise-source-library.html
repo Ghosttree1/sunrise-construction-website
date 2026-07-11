@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="sunrise_favicon_svg.svg" type="image/svg+xml">
+<title>The Source Library — Materials &amp; Finishes | Sunrise Construction</title>
+<meta name="description" content="Explore the materials, finishes and trusted vendors behind a Sunrise custom home — flooring, tile, cabinetry, countertops, hardware, lighting and more.">
+<link rel="canonical" href="https://sunriseoregon.com/source-library">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunrise Construction of Oregon">
+<meta property="og:title" content="The Source Library — Materials &amp; Finishes">
+<meta property="og:description" content="The materials, finishes and vendors behind a Sunrise custom home, in one place.">
+<meta property="og:url" content="https://sunriseoregon.com/source-library">
+<meta property="og:image" content="https://sunriseoregon.com/images/wildhorse-living.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#23211C;--muted:#6E6A60;--line:#E4DFD4;--paper:#FBF9F4;--cream:#F2EDE3;--gold:#9A7B3F;--forest:#3E4A3A;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);font-weight:300;line-height:1.7;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.12;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 5vw;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .btn{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:1px solid var(--ink);transition:.25s;}
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .btn.light{border-color:#F3EEE3;color:#F3EEE3;}
+  .btn.light:hover{background:#F3EEE3;color:var(--ink);}
+  .link{font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:10;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 5vw;color:#F3EEE3;}
+  .brand{font-family:'Fraunces';font-size:22px;letter-spacing:4px;}
+  .menu{display:flex;gap:28px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;}
+  .menu a:hover{color:var(--gold);}
+  .keylink{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:2px;color:#E2C893 !important;padding-left:26px;border-left:1px solid rgba(243,238,227,.28);}
+  .navbtn{border:1px solid #F3EEE3;padding:10px 20px;}
+  @media(max-width:900px){.menu{display:none;}}
+
+  .hero{position:relative;min-height:62vh;display:flex;align-items:flex-end;background:#1C1A15 center/cover no-repeat;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.4),rgba(20,16,12,.72));}
+  .hero .wrap{position:relative;z-index:2;color:#F6F1E7;padding-bottom:7vh;}
+  .hero h1{font-size:clamp(40px,5.6vw,72px);max-width:16ch;margin:16px 0 16px;}
+  .hero p{font-size:clamp(16px,1.5vw,20px);max-width:54ch;color:#E6DECF;}
+
+  section{padding:clamp(54px,7vw,90px) 0;}
+  .intro{max-width:800px;}
+  .intro h2{font-size:clamp(26px,3vw,40px);max-width:22ch;}
+  .intro p{color:var(--muted);margin-top:18px;font-size:17px;}
+
+  .tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+  .fbtn{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter';transition:.2s;}
+  .fbtn:hover{border-color:var(--ink);color:var(--ink);}
+  .fbtn.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr);}}
+  .cat{position:relative;aspect-ratio:1/1;border:1px solid var(--line);background:var(--cream);display:flex;flex-direction:column;justify-content:flex-end;padding:20px;overflow:hidden;transition:.25s;cursor:pointer;}
+  .cat:hover{background:var(--ink);}
+  .cat:hover *{color:#F6F1E7 !important;}
+  .cat .ic{position:absolute;top:18px;left:20px;font-size:22px;color:var(--gold);}
+  .cat .t{font-family:'Fraunces';font-size:19px;color:var(--ink);}
+  .cat .c{font-size:12px;color:var(--muted);margin-top:4px;}
+
+  .closing{position:relative;background:#23211C center/cover no-repeat;color:#F6F1E7;text-align:center;padding:88px 0;}
+  .closing::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.62);}
+  .closing .wrap{position:relative;z-index:2;}
+  .closing h2{font-size:clamp(28px,3.4vw,44px);margin:16px auto;max-width:22ch;}
+
+  .signrow{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:10px;}
+
+  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
+  .footbrand{font-family:'Fraunces';font-size:22px;letter-spacing:3px;color:#F6F1E7;}
+  footer a{color:#CFC8B8;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="brand"><a href="/"><img src="gold_sun_gray_mountain__name.png" alt="Sunrise Construction of Oregon" style="height:84px;width:auto;display:block;"></a></div>
+    <div class="menu">
+      <a href="sunrise-selected-work.html">Our Work</a>
+      <a href="sunrise-the-process.html">The Process</a>
+      <a href="sunrise-resources.html">Resources</a>
+      <a href="sunrise-our-legacy.html">Our Legacy</a>
+      <a href="sunrise-the-key.html" class="keylink" title="For current Sunrise clients">&#9911; The Key</a>
+      <a href="sunrise-begin.html" class="navbtn">Begin</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('https://sunriseoregon.com/images/wildhorse-living.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">The Source Library</span>
+    <h1>Every choice that makes a home, in one place.</h1>
+    <p>The materials, finishes, and trusted vendors behind a Sunrise home — curated from hundreds of sources so your selections feel inspiring, not overwhelming.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section style="padding-bottom:0;">
+  <div class="wrap intro">
+    <span class="eyebrow">What it is</span>
+    <h2 style="margin-top:14px;">The library behind Sunrise Interiors, our sister interior design and selections studio.</h2>
+    <p>Sunrise Interiors, our sister interior design and selections studio, brings flooring, tile, stone, hardware, lighting, furnishings, and finishes together and curates the interior design for our homes. The Source Library is how it all stays organized — browse categories for inspiration here, and once you're building with us, your personal palette lives in The Key, with every selection tracked from first idea to final walk-through.</p>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section style="padding-top:34px;">
+  <div class="wrap">
+    <div class="tools">
+      <button class="fbtn active" data-filter="all">All categories</button>
+      <button class="fbtn" data-filter="interior">Interior finishes</button>
+      <button class="fbtn" data-filter="fixtures">Fixtures &amp; hardware</button>
+      <button class="fbtn" data-filter="exterior">Exterior &amp; systems</button>
+    </div>
+    <div class="grid" id="grid">
+      <div class="cat" data-cat="interior"><span class="ic">&#9638;</span><span class="t">Flooring</span><span class="c">Wood, tile, stone, LVP</span></div>
+      <div class="cat" data-cat="interior"><span class="ic">&#9641;</span><span class="t">Tile &amp; stone</span><span class="c">Floor, wall, slab, mosaic</span></div>
+      <div class="cat" data-cat="interior"><span class="ic">&#9707;</span><span class="t">Countertops</span><span class="c">Quartz, granite, quartzite</span></div>
+      <div class="cat" data-cat="interior"><span class="ic">&#9636;</span><span class="t">Cabinetry</span><span class="c">Custom &amp; semi-custom</span></div>
+      <div class="cat" data-cat="interior"><span class="ic">&#9612;</span><span class="t">Paint &amp; finishes</span><span class="c">Color, stain, texture</span></div>
+      <div class="cat" data-cat="fixtures"><span class="ic">&#128167;</span><span class="t">Plumbing fixtures</span><span class="c">Faucets, tubs, sinks</span></div>
+      <div class="cat" data-cat="fixtures"><span class="ic">&#9728;</span><span class="t">Lighting design</span><span class="c">Decorative fixtures, recessed lighting, controls, and placement</span></div>
+      <div class="cat" data-cat="fixtures"><span class="ic">&#9919;</span><span class="t">Hardware</span><span class="c">Cabinet, door, accents</span></div>
+      <div class="cat" data-cat="fixtures"><span class="ic">&#9635;</span><span class="t">Appliances</span><span class="c">Kitchen &amp; laundry</span></div>
+      <div class="cat" data-cat="exterior"><span class="ic">&#9744;</span><span class="t">Doors &amp; windows</span><span class="c">Entry, glass, millwork</span></div>
+      <div class="cat" data-cat="exterior"><span class="ic">&#9650;</span><span class="t">Exterior &amp; roofing</span><span class="c">Siding, stone, metal</span></div>
+      <div class="cat" data-cat="exterior"><span class="ic">&#10059;</span><span class="t">Outdoor living</span><span class="c">Kitchens, fire, hardscape</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS / SIGN IN -->
+<section class="closing" style="background-image:url('https://sunriseoregon.com/images/deschutes-river-ranch-0205.jpg');">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E2C893;">For clients &amp; designers</span>
+    <h2 style="color:#F6F1E7;">Your selections, tracked from first idea to final detail.</h2>
+    <p style="color:#E6DECF;max-width:52ch;margin:0 auto 30px;">Building with us? Your personal Source Library lives in The Key, where you and your designer review, compare, and approve every choice. Prefer to see it in person? Visit Sunrise Interiors.</p>
+    <div class="signrow">
+      <a href="sunrise-the-key.html" class="btn light">&#9911; Open in The Key</a>
+      <a href="#" class="btn light" style="border-color:rgba(243,238,227,.5);">Visit Sunrise Interiors</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" style="height:94px;width:auto;"></div>
+    <p style="margin-top:12px;">Source Library &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="sunrise-resources.html">Resources</a> &nbsp;·&nbsp; <a href="sunrise-the-process.html">The Process</a> &nbsp;·&nbsp; <a href="sunrise-the-key.html">The Key</a></p>
+    <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</p>
+  </div>
+</footer>
+
+<script>
+  const btns=document.querySelectorAll('.fbtn');
+  const cats=document.querySelectorAll('.cat');
+  btns.forEach(b=>b.addEventListener('click',()=>{
+    btns.forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    const f=b.dataset.filter;
+    cats.forEach(c=>{c.style.display=(f==='all'||c.dataset.cat===f)?'':'none';});
+  }));
+</script>
+
+</body>
+</html>
