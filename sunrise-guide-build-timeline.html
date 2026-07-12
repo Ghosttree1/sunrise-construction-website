@@ -62,9 +62,16 @@
   .related a{display:block;font-family:'Fraunces';font-size:20px;padding:12px 0;border-bottom:1px solid var(--line);}
   .related a:hover{color:var(--gold);}
 
-  footer{background:#1C1A15;color:#A49E8D;padding:46px 0;font-size:13px;text-align:center;}
-  .footbrand img{height:94px;width:auto;}
-  footer a{color:#CFC8B8;}
+  footer{background:#1C1A15;color:#CFC8B8;padding:64px 0 40px;font-size:13px;}
+  .fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
+  footer h4{font-family:'Inter';font-weight:500;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#E2C893;margin-bottom:16px;}
+  footer a{display:block;color:#CFC8B8;padding:5px 0;}
+  footer a:hover{color:#fff;}
+  .foot-brand{font-family:'Fraunces';font-size:24px;letter-spacing:3px;color:#F6F1E7;}
+  .finline{line-height:2.1;max-width:34ch;}
+  .finline a{display:inline;padding:0;}
+  .fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:46px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#8A8473;}
+  @media(max-width:820px){.fcols{grid-template-columns:1fr 1fr;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SXT4WH44Z"></script>
@@ -182,9 +189,31 @@
 </section>
 
 <footer>
-  <div class="footbrand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon"></div>
-  <p style="margin-top:12px;"><a href="sunrise-resources.html">Resources</a> &nbsp;·&nbsp; <a href="sunrise-selected-work.html">Selected Work</a> &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="sunrise-the-key.html">The Key</a></p>
-  <p style="margin-top:14px;color:#7A7565;">© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</p>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="foot-brand"><img src="gold_sun_gray_mountain__name_tagline.png" alt="Sunrise Construction of Oregon" style="height:104px;width:auto;"></div>
+        <p style="margin-top:14px;max-width:34ch;color:#A49E8D;">Distinctive custom homes in Central Oregon — built around your vision and a better building experience.</p>
+        <p style="margin-top:16px;color:#A49E8D;">Bend · Redmond · Sisters · Sunriver · Tumalo · Powell Butte · Prineville · Terrebonne · and across Oregon</p>
+        <p style="margin-top:14px;color:#A49E8D;">18775 W Hwy 126, Redmond, OR 97756<br><a href="tel:+15415045831" style="color:#CFC8B8;">541-504-5831</a> · <a href="mailto:contact@sunriseoregon.com" style="color:#CFC8B8;">contact@sunriseoregon.com</a><br>Licensed Oregon home builder · CCB #234463</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <a href="sunrise-selected-work.html">Selected Work</a><a href="sunrise-rejuvenations.html">Rejuvenations</a><a href="sunrise-the-process.html">The Process</a><a href="sunrise-design-selections.html">Design + Selections</a><a href="sunrise-source-library.html">Source Library</a>
+      </div>
+      <div>
+        <h4>Community Guides &amp; partners</h4>
+        <p class="finline"><a href="sunrise-luxury-communities.html">Find Your Community</a> · <a href="sunrise-luxury-communities.html">Community Guides</a> · <a href="sunrise-ranch-estate.html">Ranch &amp; Estate Properties</a> · <a href="sunrise-resources.html">Building Resources</a> · <a href="sunrise-resources.html">For Realtors</a> · <a href="sunrise-resources.html">For Architects &amp; Designers</a> · <a href="sunrise-our-legacy.html">Our Legacy</a> · <a href="sunrise-press.html">Press &amp; Recognition</a></p>
+      </div>
+      <div>
+        <h4>The Key · for clients</h4>
+        <a href="sunrise-the-key.html">The Key — client home</a><a href="sunrise-the-key.html">Open the app</a><a href="sunrise-the-key.html">Your plans</a><a href="sunrise-the-key.html">Warranty &amp; Care</a><a href="sunrise-the-key.html">Client Connect sign-in</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Sunrise Construction of Oregon · Specializing in your vision · CCB #234463</span>
+    </div>
+  </div>
 </footer>
 
 <script src="nav-mobile.js" defer></script>
