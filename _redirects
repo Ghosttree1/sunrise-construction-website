@@ -1,0 +1,11 @@
+# Sunrise Construction — redirects
+# Consolidates the retired "Where We Build" catalog into the flagship
+# Community hub at /sunrise-luxury-communities (canonical).
+# Format: <source> <destination> <status>
+# NOTE: honored by Cloudflare Pages and Cloudflare Workers Static Assets
+# deployments. If this site is served by a custom Worker that does NOT
+# read _redirects, configure an equivalent Redirect Rule in the
+# Cloudflare dashboard instead (see the validation report).
+
+/communities            /sunrise-luxury-communities   301
+/sunrise-communities    /sunrise-luxury-communities   301
